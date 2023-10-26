@@ -1,6 +1,7 @@
 Google AdMob UIStoryBoard Cell Native AD
 
-//GOOGLE ADS SDK PACKAGE MANAGE Link: https://github.com/googleads/swift-package-manager-google-mobile-ads.git
+//GOOGLE ADS SDK PACKAGE MANAGE Link: 
+https://github.com/googleads/swift-package-manager-google-mobile-ads.git
 
 Project->Target-> BuildSettingns = All + Levels Select -> filter = Other Linker Flags -> Debug and Release Any Architecture | Any SDK  -ObjC
 
@@ -8,10 +9,15 @@ APPDELEGATE
 
 import GoogleMobileAds
 
-didFinishLaunchingWithOptions -> GADMobileAds.sharedInstance().start(completionHandler: nil)
+didFinishLaunchingWithOptions -> 
+```swift
+GADMobileAds.sharedInstance().start(completionHandler: nil)
+```
 
 info.plist -> Source Code Open As a (GADApplicationIdentifier GADIdentifier)
 -> Copy Past
+
+```swift
 
 <key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-2835131507642141~6942313339</string>
@@ -217,3 +223,4 @@ info.plist -> Source Code Open As a (GADApplicationIdentifier GADIdentifier)
 		</dict>
 	</array>
 
+```
