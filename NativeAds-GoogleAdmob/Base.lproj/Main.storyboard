@@ -1,24 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NativeAds_GoogleAdmob" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EUu-gD-VbO">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="exampleCell" rowHeight="65" id="lKv-3z-Unb" customClass="exampleCell" customModule="NativeAds_GoogleAdmob" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lKv-3z-Unb" id="1gk-mQ-dDX">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell Label Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8P-Uk-dkm">
+                                                    <rect key="frame" x="28" y="19" width="337" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="U8P-Uk-dkm" firstAttribute="leading" secondItem="1gk-mQ-dDX" secondAttribute="leadingMargin" constant="8" id="Jgx-aZ-7Cv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="U8P-Uk-dkm" secondAttribute="bottom" constant="8" id="lma-OG-Sfb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="U8P-Uk-dkm" secondAttribute="trailing" constant="8" id="ueY-lo-WSd"/>
+                                                <constraint firstItem="U8P-Uk-dkm" firstAttribute="top" secondItem="1gk-mQ-dDX" secondAttribute="topMargin" constant="8" id="xEo-Af-c0u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelEx" destination="U8P-Uk-dkm" id="CKe-Sv-wdj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="adCell" rowHeight="116" id="5kE-02-svW" customClass="adCell" customModule="NativeAds_GoogleAdmob" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="115" width="393" height="116"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5kE-02-svW" id="fef-Ik-inz">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="116"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYX-xU-BWZ" customClass="GADNativeAdView">
+                                                    <rect key="frame" x="28" y="19" width="337" height="78"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTX-Ru-g65">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="systemYellowColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9I-vh-rDj">
+                                                            <rect key="frame" x="287" y="18" width="50" height="52"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="TGx-qb-cLO"/>
+                                                                <constraint firstAttribute="width" constant="50" id="fwg-ex-afV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr8-wL-NoK">
+                                                            <rect key="frame" x="0.0" y="29" width="271" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUs-l1-Mxz">
+                                                            <rect key="frame" x="0.0" y="58" width="271" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjX-h8-RQm" customClass="GADAdChoicesView">
+                                                            <rect key="frame" x="321" y="0.0" width="16" height="16"/>
+                                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="16" id="sge-eg-rYZ"/>
+                                                                <constraint firstAttribute="width" constant="16" id="yXy-HM-8ft"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="s9I-vh-rDj" secondAttribute="trailing" id="2Bc-lx-4bi"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FjX-h8-RQm" secondAttribute="trailing" id="AyR-Nt-K7a"/>
+                                                        <constraint firstItem="Hr8-wL-NoK" firstAttribute="leading" secondItem="EYX-xU-BWZ" secondAttribute="leading" id="BSa-VQ-A8k"/>
+                                                        <constraint firstItem="gTX-Ru-g65" firstAttribute="top" secondItem="EYX-xU-BWZ" secondAttribute="top" id="IHH-hH-m2w"/>
+                                                        <constraint firstAttribute="bottom" secondItem="s9I-vh-rDj" secondAttribute="bottom" constant="8" id="JjN-qK-lKs"/>
+                                                        <constraint firstItem="s9I-vh-rDj" firstAttribute="leading" secondItem="Hr8-wL-NoK" secondAttribute="trailing" constant="16" id="M7H-Yl-puP"/>
+                                                        <constraint firstItem="s9I-vh-rDj" firstAttribute="top" secondItem="EYX-xU-BWZ" secondAttribute="top" constant="18" id="OoA-sd-gwU"/>
+                                                        <constraint firstItem="Hr8-wL-NoK" firstAttribute="top" secondItem="gTX-Ru-g65" secondAttribute="bottom" constant="8" symbolic="YES" id="USh-FE-tZQ"/>
+                                                        <constraint firstItem="FjX-h8-RQm" firstAttribute="top" secondItem="EYX-xU-BWZ" secondAttribute="top" id="f0m-jt-2rz"/>
+                                                        <constraint firstItem="rUs-l1-Mxz" firstAttribute="leading" secondItem="EYX-xU-BWZ" secondAttribute="leading" id="gl4-8C-TdX"/>
+                                                        <constraint firstItem="rUs-l1-Mxz" firstAttribute="top" secondItem="Hr8-wL-NoK" secondAttribute="bottom" constant="8" id="sVs-ss-0Xe"/>
+                                                        <constraint firstItem="gTX-Ru-g65" firstAttribute="leading" secondItem="EYX-xU-BWZ" secondAttribute="leading" id="w11-Lw-3Tg"/>
+                                                        <constraint firstItem="s9I-vh-rDj" firstAttribute="leading" secondItem="rUs-l1-Mxz" secondAttribute="trailing" constant="16" id="zGU-4a-rKe"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EYX-xU-BWZ" firstAttribute="leading" secondItem="fef-Ik-inz" secondAttribute="leadingMargin" constant="8" id="0Re-is-xAx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="EYX-xU-BWZ" secondAttribute="trailing" constant="8" id="3xI-dX-nrH"/>
+                                                <constraint firstItem="EYX-xU-BWZ" firstAttribute="top" secondItem="fef-Ik-inz" secondAttribute="topMargin" constant="8" id="5nG-WJ-5px"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="EYX-xU-BWZ" secondAttribute="bottom" constant="8" id="aab-1j-gjF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="adBody" destination="rUs-l1-Mxz" id="MMA-ay-RQM"/>
+                                            <outlet property="adChoices" destination="FjX-h8-RQm" id="zvD-5v-iad"/>
+                                            <outlet property="adImage" destination="s9I-vh-rDj" id="gob-bb-sDT"/>
+                                            <outlet property="adTitle" destination="Hr8-wL-NoK" id="HOq-PD-n8g"/>
+                                            <outlet property="gadNativeAdView" destination="EYX-xU-BWZ" id="huB-Qg-IlK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EUu-gD-VbO" secondAttribute="bottom" id="2j4-pX-fyG"/>
+                            <constraint firstItem="EUu-gD-VbO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Fe-RE-fDm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EUu-gD-VbO" secondAttribute="trailing" id="Kqv-Dm-lF4"/>
+                            <constraint firstItem="EUu-gD-VbO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e6k-oL-Cbv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tb" destination="EUu-gD-VbO" id="xXi-Or-OdF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
